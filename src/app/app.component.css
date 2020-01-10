@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300&display=swap');
+
+:root{
+    --consoleText: rgb(216, 252, 15);
+    --blueScreen: rgb(17, 15, 153);
+}
+html body { 
+    background-color: black; 
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+}
+
+.container{    
+    min-width: 400px;
+    height: 100%;
+    margin-top: 6.5em;
+    background-color: var(--blueScreen);
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    justify-content: center;
+    grid-area: 1 / line2 / last-line / 3;
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+    font-size: 50px; 
+    padding: 10px;
+}
+
+#date{
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+}
+
+.add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+
+#deleteButton{
+    visibility: hidden;
+    display: inline-block;
+    padding: 1px;
+    color: black;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+
+table :hover #deleteButton{
+    visibility: visible;
+}
+
+tr th{
+    color: white;
+    font-weight: bold;
+    padding: 15px 0 15px 50px;
+}
+
+tr td{
+    color: white;
+    padding: 15px 0 0 50px;    
+    height: 35px;
+}
