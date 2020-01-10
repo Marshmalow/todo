@@ -1,1 +1,1 @@
-Preview at this site https://marshmalow.github.io/todo/
+Preview at this site https://marshmalow.github.io/wish-list/
